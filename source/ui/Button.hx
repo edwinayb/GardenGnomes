@@ -14,8 +14,7 @@ class Button extends FlxUIButton
 	{
 		super(X, Y, Label, OnClick);
 		var text = new FlxUIText(0, 0, 0, Label);
-		
-		meep.
+		var next:Int = 0;
 		
 		this.setLabelFormat("Arial", 20, 0x000000, CENTER);
 		this.loadGraphicSlice9(["assets/images/sheet_button.png"], Math.ceil(text.width) + 10, Math.ceil(text.height) + 10, [[10, 10, 40, 40]], null, -1, false, 49, 49);
