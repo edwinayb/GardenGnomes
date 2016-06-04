@@ -1,19 +1,75 @@
 package;
 
-import flixel.FlxG;
-import flixel.FlxSprite;
-import flixel.FlxState;
-import flixel.text.FlxText;
-import flixel.ui.FlxButton;
+import flixel.FlxSubState;
+import flixel.addons.ui.FlxUISubState;
 import flixel.math.FlxMath;
 
-class PlayState extends FlxState
+import ui.*;
+import flixel.addons.ui.FlxUIButton;
+import flixel.addons.ui.FlxUIState;
+import flixel.addons.ui.FlxUIText;
+import flixel.addons.ui.FlxUISprite;
+import flixel.addons.ui.FlxUIList;
+import flixel.addons.ui.interfaces.IFlxUIWidget;
+import flixel.FlxG;
+import flixel.FlxObject;
+import openfl.Lib;
+import openfl.Assets;
+
+class PlayState extends FlxUIState
 {
+	public var dirtGround:FlxUISprite;
+	var subTestState:FlxUISubState;
+	var gnome:Gnome;
+	
 	override public function create():Void
 	{
 		super.create();
 		
-/*		flxButton = new FlxBitmapTextButton(40, 40, "Play", ClickPlay);
+		destroySubStates = false;
+		
+		subTestState = new SubTextMenu();
+		
+		initializateState();
+	}
+	
+	function initializateState()
+	{
+		var skyBackground = new FlxUISprite(0, 0, Assets.getBitmapData("assets/images/Sky.png"));
+		add(skyBackground);
+		
+		var grassBackground:Grass = new Grass(0, 320);
+		add(grassBackground);
+		
+		dirtGround = new FlxUISprite(0, 620, Assets.getBitmapData("assets/images/Dirt.png"));
+		dirtGround.immovable = true;
+		//dirtGround.allowCollisions = FlxObject.ANY;
+		add(dirtGround);
+		
+		gnome = new Gnome(0, 520, this);
+		add(gnome);
+		
+		var Buttooon = new Button(0, 0, _tongue.get("$MISC_OK", "ui"), ClickPlay);
+		Buttooon.screenCenter();
+		add(Buttooon);
+		
+		//FlxG.worldBounds.set(0, 0, 1280, 720);
+	}
+
+	override public function update(elapsed:Float):Void
+	{
+		FlxG.collide(gnome, dirtGround);
+		
+		super.update(elapsed);
+	}
+	
+	function ClickPlay()
+	{
+		openSubState(subTestState);
+	}
+}
+
+/*flxButton = new FlxBitmapTextButton(40, 40, "Play", ClickPlay);
 		flxButton.loadGraphic("assets/images/Simple_Button.png", true, 50, 50);
 		
 		button = new FlxUIButton(10, 10, "Play", ClickPlay);
@@ -75,10 +131,3 @@ class PlayState extends FlxState
         
 		//myButton9Slice255.label = "test";
         //var _graphic_sheet:String = "assets/images/sheet_button.png";*/
-	}
-
-	override public function update(elapsed:Float):Void
-	{
-		super.update(elapsed);
-	}
-}

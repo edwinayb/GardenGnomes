@@ -1,0 +1,5 @@
+flag	content
+$MISC_Cancel	Cancel
+$MISC_OK	Okay
+$MISC_YES	Yes
+$MISC_NO	No
