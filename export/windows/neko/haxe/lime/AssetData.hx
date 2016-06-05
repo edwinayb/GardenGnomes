@@ -20,10 +20,14 @@ class AssetData {
 			type.set ("assets/data/data-goes-here.txt", Reflect.field (AssetType, "text".toUpperCase ()));
 			path.set ("assets/HVD_Comic_Serif_Pro.otf", "assets/HVD_Comic_Serif_Pro.otf");
 			type.set ("assets/HVD_Comic_Serif_Pro.otf", Reflect.field (AssetType, "font".toUpperCase ()));
+			path.set ("assets/images/DecorTabBtn.png", "assets/images/DecorTabBtn.png");
+			type.set ("assets/images/DecorTabBtn.png", Reflect.field (AssetType, "image".toUpperCase ()));
 			path.set ("assets/images/Dirt.png", "assets/images/Dirt.png");
 			type.set ("assets/images/Dirt.png", Reflect.field (AssetType, "image".toUpperCase ()));
 			path.set ("assets/images/Gnome1.png", "assets/images/Gnome1.png");
 			type.set ("assets/images/Gnome1.png", Reflect.field (AssetType, "image".toUpperCase ()));
+			path.set ("assets/images/GnomeTab.png", "assets/images/GnomeTab.png");
+			type.set ("assets/images/GnomeTab.png", Reflect.field (AssetType, "image".toUpperCase ()));
 			path.set ("assets/images/Grass.png", "assets/images/Grass.png");
 			type.set ("assets/images/Grass.png", Reflect.field (AssetType, "image".toUpperCase ()));
 			path.set ("assets/images/House.png", "assets/images/House.png");
@@ -32,6 +36,12 @@ class AssetData {
 			type.set ("assets/images/sheet_button.png", Reflect.field (AssetType, "image".toUpperCase ()));
 			path.set ("assets/images/Sky.png", "assets/images/Sky.png");
 			type.set ("assets/images/Sky.png", Reflect.field (AssetType, "image".toUpperCase ()));
+			path.set ("assets/images/StoreManager.png", "assets/images/StoreManager.png");
+			type.set ("assets/images/StoreManager.png", Reflect.field (AssetType, "image".toUpperCase ()));
+			path.set ("assets/images/UpgradesTabBtn.png", "assets/images/UpgradesTabBtn.png");
+			type.set ("assets/images/UpgradesTabBtn.png", Reflect.field (AssetType, "image".toUpperCase ()));
+			path.set ("assets/images/WindowBox.png", "assets/images/WindowBox.png");
+			type.set ("assets/images/WindowBox.png", Reflect.field (AssetType, "image".toUpperCase ()));
 			path.set ("assets/locales/en-GB/aui.csv", "assets/locales/en-GB/aui.csv");
 			type.set ("assets/locales/en-GB/aui.csv", Reflect.field (AssetType, "text".toUpperCase ()));
 			path.set ("assets/locales/en-GB/fonts.xml", "assets/locales/en-GB/fonts.xml");

@@ -83,6 +83,11 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		
 		
+		
+		
+		
+		
+		
 		Font.registerFont (__ASSET__flixel_fonts_nokiafc22_ttf);
 		Font.registerFont (__ASSET__flixel_fonts_monsterrat_ttf);
 		
@@ -121,6 +126,11 @@ class DefaultAssetLibrary extends AssetLibrary {
 		#if (windows || mac || linux)
 		
 		var useManifest = false;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
 		useManifest = true;
 		useManifest = true;
 		useManifest = true;
@@ -702,6 +712,11 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		
 		
+		
+		
+		
+		
+		
 		openfl.text.Font.registerFont (__ASSET__OPENFL__flixel_fonts_nokiafc22_ttf);
 		openfl.text.Font.registerFont (__ASSET__OPENFL__flixel_fonts_monsterrat_ttf);
 		
@@ -744,10 +759,14 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set ("assets/data/data-goes-here.txt", AssetType.TEXT);
 		path.set ("assets/HVD_Comic_Serif_Pro.otf", "assets/HVD_Comic_Serif_Pro.otf");
 		type.set ("assets/HVD_Comic_Serif_Pro.otf", AssetType.FONT);
+		path.set ("assets/images/DecorTabBtn.png", "assets/images/DecorTabBtn.png");
+		type.set ("assets/images/DecorTabBtn.png", AssetType.IMAGE);
 		path.set ("assets/images/Dirt.png", "assets/images/Dirt.png");
 		type.set ("assets/images/Dirt.png", AssetType.IMAGE);
 		path.set ("assets/images/Gnome1.png", "assets/images/Gnome1.png");
 		type.set ("assets/images/Gnome1.png", AssetType.IMAGE);
+		path.set ("assets/images/GnomeTab.png", "assets/images/GnomeTab.png");
+		type.set ("assets/images/GnomeTab.png", AssetType.IMAGE);
 		path.set ("assets/images/Grass.png", "assets/images/Grass.png");
 		type.set ("assets/images/Grass.png", AssetType.IMAGE);
 		path.set ("assets/images/House.png", "assets/images/House.png");
@@ -756,6 +775,12 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set ("assets/images/sheet_button.png", AssetType.IMAGE);
 		path.set ("assets/images/Sky.png", "assets/images/Sky.png");
 		type.set ("assets/images/Sky.png", AssetType.IMAGE);
+		path.set ("assets/images/StoreManager.png", "assets/images/StoreManager.png");
+		type.set ("assets/images/StoreManager.png", AssetType.IMAGE);
+		path.set ("assets/images/UpgradesTabBtn.png", "assets/images/UpgradesTabBtn.png");
+		type.set ("assets/images/UpgradesTabBtn.png", AssetType.IMAGE);
+		path.set ("assets/images/WindowBox.png", "assets/images/WindowBox.png");
+		type.set ("assets/images/WindowBox.png", AssetType.IMAGE);
 		path.set ("assets/locales/en-GB/aui.csv", "assets/locales/en-GB/aui.csv");
 		type.set ("assets/locales/en-GB/aui.csv", AssetType.TEXT);
 		path.set ("assets/locales/en-GB/fonts.xml", "assets/locales/en-GB/fonts.xml");
@@ -871,10 +896,16 @@ class DefaultAssetLibrary extends AssetLibrary {
 		id = "assets/HVD_Comic_Serif_Pro.otf";
 		path.set (id, id);
 		type.set (id, AssetType.FONT);
+		id = "assets/images/DecorTabBtn.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
 		id = "assets/images/Dirt.png";
 		path.set (id, id);
 		type.set (id, AssetType.IMAGE);
 		id = "assets/images/Gnome1.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/GnomeTab.png";
 		path.set (id, id);
 		type.set (id, AssetType.IMAGE);
 		id = "assets/images/Grass.png";
@@ -887,6 +918,15 @@ class DefaultAssetLibrary extends AssetLibrary {
 		path.set (id, id);
 		type.set (id, AssetType.IMAGE);
 		id = "assets/images/Sky.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/StoreManager.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/UpgradesTabBtn.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/WindowBox.png";
 		path.set (id, id);
 		type.set (id, AssetType.IMAGE);
 		id = "assets/locales/en-GB/aui.csv";
@@ -1071,6 +1111,11 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		className.set ("assets/HVD_Comic_Serif_Pro.otf", __ASSET__assets_hvd_comic_serif_pro_otf);
 		type.set ("assets/HVD_Comic_Serif_Pro.otf", AssetType.FONT);
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
 		useManifest = true;
 		useManifest = true;
 		useManifest = true;
@@ -1882,6 +1927,11 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 
 
+
+
+
+
+
 @:keep @:bind #if display private #end class __ASSET__flixel_sounds_beep_ogg extends null { }
 @:keep @:bind #if display private #end class __ASSET__flixel_sounds_flixel_ogg extends null { }
 @:keep @:bind #if display private #end class __ASSET__flixel_fonts_nokiafc22_ttf extends null { }
@@ -1923,6 +1973,11 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 
 @:keep #if display private #end class __ASSET__assets_hvd_comic_serif_pro_otf extends lime.text.Font { public function new () { super (); name = "HVD Comic Serif Pro"; } } 
+
+
+
+
+
 
 
 

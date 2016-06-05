@@ -3,7 +3,8 @@ package;
 import flixel.FlxSubState;
 import flixel.addons.ui.FlxUISubState;
 import flixel.math.FlxMath;
-
+import flixel.text.FlxText;
+import flixel.util.FlxColor;
 import ui.*;
 import flixel.addons.ui.FlxUIButton;
 import flixel.addons.ui.FlxUIState;
@@ -21,6 +22,8 @@ class PlayState extends FlxUIState
 	public var dirtGround:FlxUISprite;
 	var subTestState:FlxUISubState;
 	var gnome:Gnome;
+	var mousePosx:FlxText = new FlxText(0, 0, 200);
+	var mousePosy:FlxText = new FlxText(0, 20, 200);
 	
 	override public function create():Void
 	{
@@ -53,12 +56,22 @@ class PlayState extends FlxUIState
 		Buttooon.screenCenter();
 		add(Buttooon);
 		
+		//Just to tell the positions of the mouse, for bitmap positioning uses
+		mousePosx.setFormat("_sans", 18, FlxColor.WHITE, CENTER);
+		mousePosx.setBorderStyle(OUTLINE, FlxColor.BLACK, 1);
+		mousePosy.setFormat("_sans", 18, FlxColor.WHITE, CENTER);
+		mousePosy.setBorderStyle(OUTLINE, FlxColor.BLACK, 1);
+		add(mousePosx);
+		add(mousePosy);
+		
 		//FlxG.worldBounds.set(0, 0, 1280, 720);
 	}
 
 	override public function update(elapsed:Float):Void
 	{
 		FlxG.collide(gnome, dirtGround);
+		mousePosx.text = "X Pos: " + Std.string(FlxG.mouse.screenX);
+		mousePosy.text = "Y Pos: " + Std.string(FlxG.mouse.screenY);
 		
 		super.update(elapsed);
 	}
