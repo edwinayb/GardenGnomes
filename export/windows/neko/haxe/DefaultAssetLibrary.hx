@@ -88,6 +88,11 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		
 		
+		
+		
+		
+		
+		
 		Font.registerFont (__ASSET__flixel_fonts_nokiafc22_ttf);
 		Font.registerFont (__ASSET__flixel_fonts_monsterrat_ttf);
 		
@@ -126,6 +131,11 @@ class DefaultAssetLibrary extends AssetLibrary {
 		#if (windows || mac || linux)
 		
 		var useManifest = false;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
 		useManifest = true;
 		useManifest = true;
 		useManifest = true;
@@ -717,6 +727,11 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		
 		
+		
+		
+		
+		
+		
 		openfl.text.Font.registerFont (__ASSET__OPENFL__flixel_fonts_nokiafc22_ttf);
 		openfl.text.Font.registerFont (__ASSET__OPENFL__flixel_fonts_monsterrat_ttf);
 		
@@ -759,10 +774,14 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set ("assets/data/data-goes-here.txt", AssetType.TEXT);
 		path.set ("assets/HVD_Comic_Serif_Pro.otf", "assets/HVD_Comic_Serif_Pro.otf");
 		type.set ("assets/HVD_Comic_Serif_Pro.otf", AssetType.FONT);
+		path.set ("assets/images/2k15.png", "assets/images/2k15.png");
+		type.set ("assets/images/2k15.png", AssetType.IMAGE);
 		path.set ("assets/images/DecorTabBtn.png", "assets/images/DecorTabBtn.png");
 		type.set ("assets/images/DecorTabBtn.png", AssetType.IMAGE);
 		path.set ("assets/images/Dirt.png", "assets/images/Dirt.png");
 		type.set ("assets/images/Dirt.png", AssetType.IMAGE);
+		path.set ("assets/images/exitbtn.png", "assets/images/exitbtn.png");
+		type.set ("assets/images/exitbtn.png", AssetType.IMAGE);
 		path.set ("assets/images/Gnome1.png", "assets/images/Gnome1.png");
 		type.set ("assets/images/Gnome1.png", AssetType.IMAGE);
 		path.set ("assets/images/GnomeTab.png", "assets/images/GnomeTab.png");
@@ -775,8 +794,14 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set ("assets/images/sheet_button.png", AssetType.IMAGE);
 		path.set ("assets/images/Sky.png", "assets/images/Sky.png");
 		type.set ("assets/images/Sky.png", AssetType.IMAGE);
+		path.set ("assets/images/store.png", "assets/images/store.png");
+		type.set ("assets/images/store.png", AssetType.IMAGE);
 		path.set ("assets/images/StoreManager.png", "assets/images/StoreManager.png");
 		type.set ("assets/images/StoreManager.png", AssetType.IMAGE);
+		path.set ("assets/images/trophy.png", "assets/images/trophy.png");
+		type.set ("assets/images/trophy.png", AssetType.IMAGE);
+		path.set ("assets/images/trophy_p.png", "assets/images/trophy_p.png");
+		type.set ("assets/images/trophy_p.png", AssetType.IMAGE);
 		path.set ("assets/images/UpgradesTabBtn.png", "assets/images/UpgradesTabBtn.png");
 		type.set ("assets/images/UpgradesTabBtn.png", AssetType.IMAGE);
 		path.set ("assets/images/WindowBox.png", "assets/images/WindowBox.png");
@@ -896,10 +921,16 @@ class DefaultAssetLibrary extends AssetLibrary {
 		id = "assets/HVD_Comic_Serif_Pro.otf";
 		path.set (id, id);
 		type.set (id, AssetType.FONT);
+		id = "assets/images/2k15.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
 		id = "assets/images/DecorTabBtn.png";
 		path.set (id, id);
 		type.set (id, AssetType.IMAGE);
 		id = "assets/images/Dirt.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/exitbtn.png";
 		path.set (id, id);
 		type.set (id, AssetType.IMAGE);
 		id = "assets/images/Gnome1.png";
@@ -920,7 +951,16 @@ class DefaultAssetLibrary extends AssetLibrary {
 		id = "assets/images/Sky.png";
 		path.set (id, id);
 		type.set (id, AssetType.IMAGE);
+		id = "assets/images/store.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
 		id = "assets/images/StoreManager.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/trophy.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/images/trophy_p.png";
 		path.set (id, id);
 		type.set (id, AssetType.IMAGE);
 		id = "assets/images/UpgradesTabBtn.png";
@@ -1111,6 +1151,11 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		className.set ("assets/HVD_Comic_Serif_Pro.otf", __ASSET__assets_hvd_comic_serif_pro_otf);
 		type.set ("assets/HVD_Comic_Serif_Pro.otf", AssetType.FONT);
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
+		useManifest = true;
 		useManifest = true;
 		useManifest = true;
 		useManifest = true;
@@ -1932,6 +1977,11 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 
 
+
+
+
+
+
 @:keep @:bind #if display private #end class __ASSET__flixel_sounds_beep_ogg extends null { }
 @:keep @:bind #if display private #end class __ASSET__flixel_sounds_flixel_ogg extends null { }
 @:keep @:bind #if display private #end class __ASSET__flixel_fonts_nokiafc22_ttf extends null { }
@@ -1973,6 +2023,11 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 
 @:keep #if display private #end class __ASSET__assets_hvd_comic_serif_pro_otf extends lime.text.Font { public function new () { super (); name = "HVD Comic Serif Pro"; } } 
+
+
+
+
+
 
 
 

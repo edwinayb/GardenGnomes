@@ -16,14 +16,21 @@ import flixel.FlxG;
 import flixel.FlxObject;
 import openfl.Lib;
 import openfl.Assets;
+import flixel.ui.FlxButton;
 
 class PlayState extends FlxUIState
 {
 	public var dirtGround:FlxUISprite;
 	var subTestState:FlxUISubState;
 	var gnome:Gnome;
+	
+	//UI CODE//
 	var mousePosx:FlxText = new FlxText(0, 0, 200);
 	var mousePosy:FlxText = new FlxText(0, 20, 200);
+	var storeMenuState:FlxUISubState = new StoreMenuState();
+	
+	//UI CODE END//
+	
 	
 	override public function create():Void
 	{
@@ -37,7 +44,7 @@ class PlayState extends FlxUIState
 	}
 	
 	function initializateState()
-	{
+	{		
 		var skyBackground = new FlxUISprite(0, 0, Assets.getBitmapData("assets/images/Sky.png"));
 		add(skyBackground);
 		
@@ -56,6 +63,14 @@ class PlayState extends FlxUIState
 		Buttooon.screenCenter();
 		add(Buttooon);
 		
+		//UI CODE//
+		var _btnStore = new FlxButton(1120, 560, null, ClickStore);
+		_btnStore.loadGraphic(Assets.getBitmapData("assets/images/store.png"), true, 375, 375);
+		_btnStore.scale.x = 0.4;
+		_btnStore.scale.y = 0.4;
+		_btnStore.updateHitbox();
+		add(_btnStore);
+		
 		//Just to tell the positions of the mouse, for bitmap positioning uses
 		mousePosx.setFormat("_sans", 18, FlxColor.WHITE, CENTER);
 		mousePosx.setBorderStyle(OUTLINE, FlxColor.BLACK, 1);
@@ -64,14 +79,19 @@ class PlayState extends FlxUIState
 		add(mousePosx);
 		add(mousePosy);
 		
+		//UI CODE END//
+		
 		//FlxG.worldBounds.set(0, 0, 1280, 720);
 	}
 
 	override public function update(elapsed:Float):Void
 	{
 		FlxG.collide(gnome, dirtGround);
+		
+		//UI CODE//
 		mousePosx.text = "X Pos: " + Std.string(FlxG.mouse.screenX);
 		mousePosy.text = "Y Pos: " + Std.string(FlxG.mouse.screenY);
+		//UI CODE END//
 		
 		super.update(elapsed);
 	}
@@ -79,6 +99,11 @@ class PlayState extends FlxUIState
 	function ClickPlay()
 	{
 		openSubState(subTestState);
+	}
+	
+	function ClickStore()
+	{
+		openSubState(storeMenuState);
 	}
 }
 

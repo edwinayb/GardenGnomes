@@ -511,7 +511,7 @@ class ApplicationMain {
 		
 		config = {
 			
-			build: "430",
+			build: "537",
 			company: "Atilio",
 			file: "GardenGnomes",
 			fps: 60,
